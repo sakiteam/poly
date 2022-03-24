@@ -1,0 +1,19 @@
+language: dart
+dart:
+  # Install the latest stable release
+  - stable
+
+dart_task:
+  - dartfmt: false
+  - dartanalyzer: true
+  - test: --platform vm
+os:
+  - linux
+#  - osx
+  - windows
+
+#install:
+#  - gem install coveralls-lcov
+#
+#after_success:
+#  - coveralls-lcov --repo-token $COVERALLS_TOKEN coverage/lcov.info
